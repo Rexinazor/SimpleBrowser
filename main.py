@@ -1,3 +1,4 @@
+#Rexinazor 
 import sys
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
@@ -12,7 +13,6 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.browser)
         self.showMaximized()
 
-        # navbar
         navbar = QToolBar()
         self.addToolBar(navbar)
 
@@ -39,7 +39,7 @@ class MainWindow(QMainWindow):
         self.browser.urlChanged.connect(self.update_url)
 
     def navigate_home(self):
-        self.browser.setUrl(QUrl('http://programming-hero.com'))
+        self.browser.setUrl(QUrl('https://github.com/Rexinazor'))
 
     def navigate_to_url(self):
         url = self.url_bar.text()
@@ -50,6 +50,6 @@ class MainWindow(QMainWindow):
 
 
 app = QApplication(sys.argv)
-QApplication.setApplicationName('My Cool Browser')
+QApplication.setApplicationName('Basic Browser')
 window = MainWindow()
 app.exec_()
