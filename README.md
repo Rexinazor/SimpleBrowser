@@ -1,2 +1,2 @@
-# Simple_Browser
+# Simple Browser
 Basic Python Browser
